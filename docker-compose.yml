@@ -1,11 +1,11 @@
 version: "3"
 services:
   client:
-    image: "spg51/lab:fib-client"
+    image: "kamiliusz/fibcalc2:fib-client"
     mem_limit: 128m
     hostname: client
   server:
-    image: "spg51/lab:fib-server"
+    image: "kamiliusz/fibcalc2:fib-server"
     mem_limit: 128m
     hostname: api
     environment:
@@ -17,14 +17,14 @@ services:
       - PGPASSWORD=$PGPASSWORD
       - PGPORT=$PGPORT
   worker:
-    image: "spg51/lab:fib-worker"
+    image: "kamiliusz/fibcalc2:fib-worker"
     mem_limit: 128m
     hostname: worker
     environment:
       - REDIS_HOST=$REDIS_HOST
       - REDIS_PORT=$REDIS_PORT
   nginx:
-    image: "spg51/lab:fib-router"
+    image: "kamiliusz/fibcalc2:fib-router"
     mem_limit: 128m
     hostname: nginx
     ports:
