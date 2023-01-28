@@ -65,7 +65,7 @@ jobs:
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         application_name: kzmultifib
         environment_name: Kzmultifib-env
-        version_label: pfs_zad2
+        version_label: pfs_zad2b
         region: us-east-1
-        deployment_package: deploy.zip
+        deployment_package: deploy_b.zip
         use_existing_version_if_available: false
