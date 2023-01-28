@@ -67,5 +67,5 @@ jobs:
         environment_name: Kzmultifib-env
         version_label: pfs_zad2b
         region: us-east-1
-        deployment_package: deploy_b.zip
+        deployment_package: deploy.zip
         use_existing_version_if_available: false
